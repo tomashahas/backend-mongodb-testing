@@ -15,6 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 dotenv.config();
 
+app.get('/', (req, res) => res.send('working'));
 
 app.use('/api', apiRoutes);
 
