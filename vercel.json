@@ -1,1 +1,10 @@
-"rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
+{
+   "version": 2,
+   "name": "backend-mongodb-testing",
+   "builds": [
+      { "src": "app.js", "use": "@vercel/node" }
+   ],
+   "routes": [
+      { "src": "/(.*)", "dest": "/app.js" }
+   ]
+}
