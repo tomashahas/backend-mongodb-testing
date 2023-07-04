@@ -20,7 +20,7 @@ app.get('/', (req, res) => res.send('working'));
 app.use('/api', apiRoutes);
 
 
-const DB_CONNECTION_URL = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@mongodb-test.3qxdheg.mongodb.net/?retryWrites=true&w=majority`;
+const DB_CONNECTION_URL = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@mongodb-test.es2a7fp.mongodb.net/?retryWrites=true&w=majority`;
 const PORT = process.env.PORT || 9080;
 
 
